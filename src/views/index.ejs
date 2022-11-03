@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quản Lý Giảng Viên
+        
+    </title>
+</head>
+<body>
+    <a href="addUser"><button>Them</button></a>
+    <table border="1">
+        <tr>
+            <th>Phone</th>
+            <th>Password</th>
+            <th>TypeTegister</th>
+            <th>TokenLogin</th>
+            <th>DeviceID</th>
+            <th>FcmTokens</th>
+            <th>Action</th>
+        </tr>
+        <% datas.forEach(item => { %>
+            <tr>
+                <td><%= item.Phone %></td>
+                <td><%= item.Password %></td>
+                <td><%= item.TypeTegister %></td>
+                <td><%= item.TokenLogin %></td>
+                <td><%= item.DeviceID %></td>
+                <td><%= item.FcmTokens %></td>
+                <td><a href="form_update/<%= item.id %>">Update</a> <a href="delete/<%= item.id %>">Delete</a></td>
+            </tr>
+        <% }) %>
+    </table>
+</body>
+</html>

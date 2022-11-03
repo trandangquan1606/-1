@@ -1,0 +1,18 @@
+
+<form  method="POST" action="/Update">
+    <label for="id">ID</label><br>
+    <input type="text" name="id" value="<%= datas._id %>"><br>
+    <label for="Phone">Phone</label><br>
+    <input type="text" name="Phone" value="<%= datas.Phone %>"><br>
+    <label for="Password">Password</label><br>
+    <input type="text" name="Password" value="<%= datas.Password %>"><br>
+    <label for="TypeTegister">TypeTegister</label><br>
+    <input type="text" name="TypeTegister" value="<%= datas.TypeTegister %>"><br>
+    <label for="TokenLogin">TokenLogin</label><br>
+    <input type="text" name="TokenLogin" value="<%= datas.TokenLogin %>"><br>
+    <label for="DeviceID">DeviceID</label><br>
+    <input type="text" name="DeviceID" value="<%= datas.DeviceID %>" ><br>
+    <label for="FcmTokens">FcmTokens</label><br>
+    <input type="text" name="FcmTokens" value="<%= datas.FcmTokens %>" ><br>
+    <input type="submit" value="Update">
+    </form>
